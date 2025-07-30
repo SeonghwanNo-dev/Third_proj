@@ -1,0 +1,29 @@
+1. MVC 구조의 핵심은 C다.
+M: Model, 데이터의 처리를 담당한다.
+V: View, html 생성을 담당, (ex, 템플릿을 이용해 동적으로 html을 변경한다.)
+C: Controller, 모든 행위의 중심이자 지휘자
+client
+
+5가지 상호작용이 있다.
+모든 상호작용에는 C가 있다는 것을 기억하라
+
+client->C: Client의 요청을 전달한다. by HTTP
+C->M: 요청에 필요한 비즈니스 로직 처리를 M에게 지시한다. (M이 DB와 연결하거나 비즈니스 로직을 수행한다.)
+M->C: 데이터 처리에 대한 결과를 전달한다.
+C->V: processed_data를 템플릿에 넣어 html을 생성한다.
+C->clinet: processed_html을 브라우저에게 넘긴다.
+
+이 모든 일련의 과정은 controller의 소스코드에 담겨 있다.
+client->C, by 라우팅
+C->M, by 메서드 호출
+M->C, by 메서드 호출의 리턴값
+C->V, by Model 객체에 데이터 담기
+C->client, by return 템플릿 페이지(뷰)
+
+C가 모든 상호작용에 참여한다는 걸 기억.(그러니 Controller의 소스코드에 다 들어있겠지)
+
+
+2. 템플릿 = 동적 html의 설계도
+html에다 변수를 넣어 동적으로 html을 변경할 수 있는 것이 템플릿이다.
+
+3. Clinet -> (DTO -> Controller -> Entity -> Repository) -> DB
