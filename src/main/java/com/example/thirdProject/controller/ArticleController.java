@@ -48,7 +48,7 @@ public class ArticleController {
     }
 
     @GetMapping("/articles")
-    public String show(Model model)
+    public String index(Model model)
     {
         ArrayList<Article> articleEntityList = articleRepository.findAll();
         model.addAttribute("articleList", articleEntityList);
