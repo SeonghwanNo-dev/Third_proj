@@ -30,4 +30,7 @@ public class Article {
         return title+", "+content;
     }
 
+    public Long getId() {
+        return this.id;
+    }
 }

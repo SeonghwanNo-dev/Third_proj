@@ -27,3 +27,7 @@ C가 모든 상호작용에 참여한다는 걸 기억.(그러니 Controller의 
 html에다 변수를 넣어 동적으로 html을 변경할 수 있는 것이 템플릿이다.
 
 3. Clinet -> (DTO -> Controller -> Entity -> Repository) -> DB
+
+4. <a> 태그와 <form> 태그는 페이지 이동을 가능케 해준다.
+다른 태그는 못 외워도 이 태그는 반드시 외워두자.
+
