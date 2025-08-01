@@ -73,4 +73,12 @@ public class ArticleController {
         if (target != null) articleRepository.save(article);
         return "redirect:/articles/"+article.getId();
     }
+
+    @GetMapping("/articles/{id}/delete")
+    public String delete(@PathVariable Long id, Model model)
+    {
+        Article target = articleRepository.findById(id).orElse(null);
+        if (target != null) articleRepository.delete(target);
+        return "redirect:/articles";
+    }
 }
