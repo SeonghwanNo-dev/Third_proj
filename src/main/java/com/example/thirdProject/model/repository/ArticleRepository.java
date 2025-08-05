@@ -1,7 +1,7 @@
-package com.example.thirdProject.repository;
+package com.example.thirdProject.model.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import com.example.thirdProject.entity.Article;
+import com.example.thirdProject.model.entity.Article;
 
 import java.util.ArrayList;
 

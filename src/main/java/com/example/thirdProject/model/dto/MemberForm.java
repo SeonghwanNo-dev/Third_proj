@@ -1,5 +1,5 @@
-package com.example.thirdProject.dto;
-import com.example.thirdProject.entity.Member;
+package com.example.thirdProject.model.dto;
+import com.example.thirdProject.model.entity.Member;
 
 public class MemberForm {
     private String email;

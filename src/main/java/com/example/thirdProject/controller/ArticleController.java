@@ -7,13 +7,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 
-import com.example.thirdProject.dto.ArticleForm;
-import com.example.thirdProject.entity.Article;
-import com.example.thirdProject.repository.ArticleRepository;
+import com.example.thirdProject.model.dto.ArticleForm;
+import com.example.thirdProject.model.entity.Article;
+import com.example.thirdProject.model.repository.ArticleRepository;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class ArticleController {

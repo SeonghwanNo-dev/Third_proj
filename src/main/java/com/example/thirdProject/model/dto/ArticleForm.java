@@ -1,6 +1,6 @@
-package com.example.thirdProject.dto;
+package com.example.thirdProject.model.dto;
 
-import com.example.thirdProject.entity.Article;
+import com.example.thirdProject.model.entity.Article;
 
 public class ArticleForm {
     private Long id;
